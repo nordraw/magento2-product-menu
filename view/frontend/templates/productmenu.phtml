@@ -1,0 +1,18 @@
+<div class="block block_productmenu">
+    <strong class="block_productmenu__title">Product Menu</strong>
+    <div class="block_productmenu__content">
+        <?php foreach ($block->getSimpleProducts() as $product): ?>
+            <div class="block_productmenu__item">
+                <a class="block_productmenu__item_image" href="<?php echo $product->getProductUrl(); ?>">
+                    <img
+                        src="http://magento2.loc/media/catalog/product/cache/3add84c3b99a22100b7295afe00c95d7<?php echo $product->getSmallImage(); ?>">
+                </a>
+                <div class="block_productmenu__item_info">
+                    <a href="<?php echo $product->getProductUrl(); ?>"
+                       class="block_productmenu__item_title"><?php echo $product->getName(); ?></a>
+                    <div class="block_productmenu__item_price">$<?php echo $product->getFinalPrice(); ?></div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>

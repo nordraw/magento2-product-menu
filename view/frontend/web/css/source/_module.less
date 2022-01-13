@@ -1,0 +1,45 @@
+.block_productmenu {
+    padding: 1px;
+
+    &__title {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #cccccc;
+        }
+
+        &_image {
+            max-width: 30%;
+        }
+
+        &_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: end;
+            color: #000;
+        }
+
+        &_title {
+            text-decoration: none;
+            transition: 0.2s;
+            color: #000;
+
+            &:hover {
+                color: #000;
+            }
+        }
+
+        &_price {
+            font-weight: 700;
+        }
+    }
+}
