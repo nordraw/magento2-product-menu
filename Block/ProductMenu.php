@@ -32,10 +32,10 @@ class ProductMenu extends \Magento\Framework\View\Element\Template
     }
 
     /**
-     * Get 3 simple products per page
+     * Get 3 random products per page
      * @return \Magento\Catalog\Model\ResourceModel\Product\Collection
      */
-    public function getSimpleProducts()
+    public function getProducts()
     {
         $collection = $this->productCollectionFactory->create();
 

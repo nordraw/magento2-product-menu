@@ -1,6 +1,6 @@
 # Magento 2 Product Menu Extension
 
-This Magento 2 module displays 3 simple products of the selected category in the sidebar. When you refresh the page, the products change.
+This Magento 2 module displays 3 random products of the selected category in the sidebar. When you refresh the page, the products change.
 
 ![Example](docs/details.jpg)
 

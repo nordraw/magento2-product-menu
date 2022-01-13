@@ -1,7 +1,7 @@
 <div class="block block_productmenu">
     <strong class="block_productmenu__title">Product Menu</strong>
     <div class="block_productmenu__content">
-        <?php foreach ($block->getSimpleProducts() as $product): ?>
+        <?php foreach ($block->getProducts() as $product): ?>
             <div class="block_productmenu__item">
                 <a class="block_productmenu__item_image" href="<?php echo $product->getProductUrl(); ?>">
                     <img
